@@ -18,7 +18,7 @@
 
   "content_scripts": [ {
     "js": [ "js/content-script.js" ],
-    "matches": [ "https://docs.google.com/*", "https://www.example.com/*" ],  // https://developer.chrome.com/extensions/match_patterns
+    "matches": [ "https://docs.google.com/*", "https://www.example.com/*" ],
     "run_at": "document_end"
   }],
   "permissions": [
