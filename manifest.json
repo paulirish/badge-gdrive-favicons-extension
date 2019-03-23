@@ -1,0 +1,30 @@
+{
+  "name": "PM's Best Friend",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "For the many-tabbed souls, classify your tabs with color",
+  "homepage_url": "https://github.com/paulirish",
+  "icons": {
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+
+  "web_accessible_resources": [
+    "icons/*.ico"
+  ],
+  "options_page": "options/options.html",
+  "options_ui": {
+     "chrome_style": false,
+     "page": "options/options.html"
+  },
+
+  "content_scripts": [ {
+    "js": [ "js/content-script.js" ],
+    "matches": [ "https://docs.google.com/*", "https://www.example.com/*" ],  // https://developer.chrome.com/extensions/match_patterns
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "tabs",
+    "storage"
+  ]
+}
