@@ -7,8 +7,6 @@
   "icons": {
     "128": "icons/icon128.png"
   },
-  "default_locale": "en",
-
   "web_accessible_resources": [
     "icons/*.ico"
   ],
